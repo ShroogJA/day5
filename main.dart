@@ -1,17 +1,18 @@
 import 'dart:io';
 
-import 'user.dart';
+import 'Car.dart';
 
-main() {
-  User u = User(title: "amel", description: "18/12/2000");
-  User u1 = User(title: "shroog", description: "shroog name");
-  User u3 = User(title: "abrar", description: "abrar name");
-  u.add();
-  u1.add();
-  u3.add();
-  u.veiw();
-  stdout.write("enter name you need delete:");
-  String name = stdin.readLineSync()!;
-  u.remove(name);
-  u.veiw();
+enum CarType { CITY_CAR, SPORTS_CAR }
+
+enum Category { MANUAL, AUTOMATIC }
+
+void main() {
+  
+  Car car = Buildcar(seats: 4, Cartype: CarType.CITY_CAR)
+      .setcategory(Category.MANUAL)
+      .setgpsNavigator(false)
+      .setgpsNavigator(true)
+      .Build();
+
+  car.printfunction();
 }
