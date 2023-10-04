@@ -4,6 +4,9 @@ import 'package:project1/Homepage.dart';
 import 'package:project1/app1.dart';
 import 'package:project1/app2.dart';
 
+import 'dya26pp1.dart';
+import 'stackApp.dart';
+
 void main(){
   runApp(MainApp());
 
@@ -12,7 +15,7 @@ class MainApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
    return MaterialApp(
-     home: App1(),
+     home:StackApp() ,
    );
   }
 
