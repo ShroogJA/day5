@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'project1.dart';
 import 'project2.dart';
+import 'project3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,6 +15,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: AddTextWidget(),
+      home: TaskApp(),
     );
         }}
